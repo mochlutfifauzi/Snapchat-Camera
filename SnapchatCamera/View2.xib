@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10117"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="View2" customModule="SnapchatCamera" customModuleProvider="target">
             <connections>
+                <outlet property="cameraView" destination="VVh-N7-xNu" id="wMY-V6-GEI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -13,7 +15,22 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVh-N7-xNu">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="0.33818916509733155" blue="0.3129381846844097" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="VVh-N7-xNu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BCN-3M-p41"/>
+                <constraint firstAttribute="bottom" secondItem="VVh-N7-xNu" secondAttribute="bottom" id="Cyq-Cu-3Hc"/>
+                <constraint firstItem="VVh-N7-xNu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KJJ-Mm-Hkg"/>
+                <constraint firstItem="VVh-N7-xNu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Ooy-zx-XCD"/>
+                <constraint firstAttribute="trailing" secondItem="VVh-N7-xNu" secondAttribute="trailing" id="lvj-hw-Ro3"/>
+                <constraint firstItem="VVh-N7-xNu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qzp-oG-zBy"/>
+                <constraint firstItem="VVh-N7-xNu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="vKF-l7-5gp"/>
+            </constraints>
         </view>
     </objects>
 </document>
